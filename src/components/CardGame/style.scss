@@ -1,0 +1,11 @@
+@use '../../../styles/settings/colors';
+
+.card-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 160px;
+    background-color: colors.$alura-background;
+    border: 4px solid colors.$floral-white;
+}
