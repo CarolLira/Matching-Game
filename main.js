@@ -9,17 +9,26 @@ import PlayerName from './src/components/PlayerName';
 3. Criar o verso do CardGame e a mecânica de virar a carta quando o player clicar nela. */
 
 const $app = document.querySelector('#app');
-const $htmlCardGame = CardGame();
 const cardsNumber = 6;
 
 function showCards(number) {
     let i = 0, cards = '';
-    while (i <= number) {
-        cards += $htmlCardGame;
+    while (i < number) {
+        cards += CardGame(i);
         i++;
     }
     $app.innerHTML = cards;
 }
 
+function turnCard() {
+    const cards = Array.from(document.querySelectorAll('.card-game'));
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            card.innerHTML = `<img src="images/javascript.svg" alt="Logo do Javascript">`;
+        });
+    });
+}
+
 showCards(cardsNumber);
+turnCard();
 
