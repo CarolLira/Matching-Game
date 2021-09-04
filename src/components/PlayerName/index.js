@@ -1,8 +1,8 @@
 import './style.scss';
 
-function PlayerName(number) {
+function PlayerName(content) {
     return `
-        <p>Player ${number}</p>
+        <p class="player-name">${content}</p>
     `;
 }
 
