@@ -1,7 +1,6 @@
-import './styles/elements/base.scss';
 import './styles/generic/reset.scss';
-import CardGame from './src/components/CardGame';
-import PlayerName from './src/components/PlayerName';
+import './styles/elements/base.scss';
+
 import BoardGame from './src/objects/BoardGame';
 
 /* Apresentação dos 3 desafios do Módulo 01.

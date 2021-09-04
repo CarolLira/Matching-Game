@@ -1,9 +1,15 @@
+import './style.scss';
 import CardGame from '../../components/CardGame';
 
 function BoardGame(amoutCards) {
     const $cardGame = CardGame();
-    const $boardGame = $cardGame.repeat(amoutCards)
-    return $boardGame;
+    const $content = $cardGame.repeat(amoutCards)
+    
+    return `
+        <section class="board-game">
+            ${$content}
+        </section>
+    `;
 }
 
 export default BoardGame;
