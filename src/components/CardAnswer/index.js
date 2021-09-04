@@ -1,7 +1,7 @@
 import './style.scss';
 
 function CardAnswer() {
-    return `
+    return /*html*/`
         <article class="card-answer">
             <img src="images/javascript.svg" alt="Logo do Javascript">
         </article>

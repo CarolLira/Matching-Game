@@ -5,7 +5,7 @@ function BoardGame(amoutCards) {
     const $cardGame = CardGame();
     const $content = $cardGame.repeat(amoutCards)
     
-    return `
+    return /*html*/`
         <section class="board-game">
             ${$content}
         </section>
