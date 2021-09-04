@@ -1,8 +1,8 @@
 import './style.scss';
 
-function CardGame() {
+function CardGame(index) {
     return `
-        <article class="card-game">
+        <article class="card-game" id="${index}">
             <img src="images/alura.svg" alt="Logo da Alura">
         </article>
     `;
