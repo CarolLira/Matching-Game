@@ -3,8 +3,8 @@ import CardGame from '../CardGame';
 function CardFrontBack() {
     return /*html*/`
         <article class="card-front-back">
-            ${CardGame()}
-            ${CardGame()}
+            ${CardGame('alura', 'Logo da Alura')}
+            ${CardGame('javascript', 'Logo do Javascript')}
         </article>
     `;
 }
