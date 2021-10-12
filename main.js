@@ -1,7 +1,5 @@
-import './styles/generic/reset.scss';
-import './styles/elements/base.scss';
+import './styles/index.scss';
 
-// import BoardGame from './src/objects/BoardGame';
 import ScoreBoard from './src/objects/ScoreBoard';
 import BoardGame from './src/objects/BoardGame';
 

@@ -1,0 +1,28 @@
+@use '../../../styles/settings/colors';
+
+.card-front-back {
+    width: 130px;
+    height: 160px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 600ms cubic-bezier(0.42, 0, 0.54, 1.68);
+
+    &.active {
+        transform: rotateY(180deg);
+    }
+
+    > .front,
+    > .back {
+        position: absolute;
+        backface-visibility: hidden;
+    }
+
+    > .back {
+        transform: rotateY(180deg);
+
+        .card-game {
+            background-color: colors.$fiery-rose;
+        }
+    }
+}
+

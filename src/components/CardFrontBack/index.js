@@ -1,10 +1,15 @@
+import './style.scss';
 import CardGame from '../CardGame';
 
 function CardFrontBack() {
     return /*html*/`
         <article class="card-front-back">
-            ${CardGame('alura', 'Logo da Alura')}
-            ${CardGame('javascript', 'Logo do Javascript')}
+            <div class="front">
+                ${CardGame('alura', 'Logo da Alura')}
+            </div>
+            <div class="back">
+                ${CardGame('javascript', 'Logo do Javascript')}
+            </div>
         </article>
     `;
 }

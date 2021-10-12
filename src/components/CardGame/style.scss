@@ -1,6 +1,7 @@
 @use '../../../styles/settings/colors';
 
 .card-game {
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
